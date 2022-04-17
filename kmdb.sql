@@ -98,15 +98,15 @@
 -- Turns column mode on but headers off
 .mode column
 .headers off
-.width 30
+.width 30 30 30
 
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 
-DROP TABLE movies;
-DROP TABLE studios;
-DROP TABLE actors;
-DROP Table casts;
+DROP TABLE IF EXISTS movies;
+DROP TABLE IF EXISTS studios;
+DROP TABLE IF EXISTS actors;
+DROP TABLE IF EXISTS casts;
 
 -- Create new tables, according to your domain model
 -- TODO!
